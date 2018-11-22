@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Cryptonite</title>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/heroic-features.css" rel="stylesheet">
+  <!-- Spinner -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="se-pre-con"></div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Cryptonite</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li id="Home" class="nav-item active">
+            <a  href="#header" onclick="Home(`all`)" class="nav-link">Home
+              <!-- <span class="sr-only">(current)</span> -->
+            </a>
+          </li>
+          <li id="Live Reports" class="nav-item active">
+            <a href="#header" onclick="LiveReports()" class="nav-link">Live Reports</a>
+          </li>
+          <li  id="About"  class="nav-item active">
+            <a href="#header" onclick="About()" class="nav-link">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="parallax"></div>
+ 
+  
+  <!-- Page Content -->
+  <div class="container">
+    <!-- Header -->
+    <header  id="header"class="jumbotron my-4">
+      <h1 class="display-3">
+        Get into the Virtual Coin World!</h1>
+      <p class="lead">Make the right investment with us!</p>
+      <input id="searchcoin" class="input" type="text">
+      <button onclick="Home(`search`)" href="" class="btn btn-primary btn-me">Search</button>
+      <button onclick="Home('followed')" href="" class="btn btn-primary btn-me">Followed Coins</button>
+    </header>
+    <!-- Page -->
+    <h1 id="pagename" ></h1>
+    <main id="main" class="text-center"><i class="fa fa-refresh fa-spin" style="font-size:24px"></i></main>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Please give up on one</h5>
+          <button onclick="Home(`all`)" type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div id="modalbody" class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button onclick="Home(`all`)" type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- /.container -->
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Cryptonite 2018</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+ <script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- Canvas -->
+  <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+  <!-- Mine -->
+  <script src="myhome.js"></script>
+  <script src="myreports.js"></script>
+  <script src="myabout.js"></script>
+
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
+</body>
+
+</html>
+
